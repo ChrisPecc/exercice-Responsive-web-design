@@ -1,0 +1,78 @@
+/* position responsive design */
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: red;
+    color: white;
+    text-align: justify; }
+    body .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; }
+      body .container #medium {
+        display: none; }
+      body .container #large {
+        display: none; }
+      body .container #small {
+        grid-row: 1 / 2; }
+      body .container #second {
+        grid-row: 2 / 3; }
+      body .container #third {
+        grid-row: 3 / 4; } }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  body {
+    background-color: green;
+    color: white; }
+    body .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto; }
+      body .container #small {
+        display: none; }
+      body .container #large {
+        display: none; }
+      body .container #medium {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      body .container #second {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2; }
+      body .container #third {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3; } }
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+    color: white;
+    text-align: justify; }
+    body .container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto; }
+      body .container #small {
+        display: none; }
+      body .container #medium {
+        display: none; }
+      body .container #large {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      body .container #second {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      body .container #third {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; } }
+
+/* mise en forme */
+div {
+  padding: 5px;
+  margin: 5px; }
+  div p {
+    text-align: justify; }
+
+footer {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  footer a {
+    color: yellow; }

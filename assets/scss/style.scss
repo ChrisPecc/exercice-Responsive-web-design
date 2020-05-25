@@ -1,0 +1,142 @@
+/* position responsive design */
+
+
+@media only screen and (max-width: 300px) {
+    
+    body {
+        background-color: red;
+        color: white;
+        text-align: justify;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+
+            #medium {
+                display: none;
+            }
+    
+            #large {
+                display: none;
+            }
+
+            #small {
+                grid-row: 1 / 2;
+            }
+            
+            #second {
+                grid-row: 2 / 3;
+            }
+
+            #third {
+                grid-row: 3 / 4;
+            }
+        
+        }    
+    
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    
+    body {
+        background-color: green;
+        color: white;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+
+            #small {
+                display: none;
+            }
+    
+            #large {
+                display: none;
+            }
+
+            #medium {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            
+            #second {
+                grid-column: 2 / 4;
+                grid-row: 1 / 2;
+            }
+
+            #third {
+                grid-column: 1 / 4;
+                grid-row: 2 / 3;
+            }
+     
+        }
+    
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+        color: white;
+        text-align: justify;
+
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+
+            #small {
+                display: none;
+            }
+    
+            #medium {
+                display: none;
+            }
+
+            #large {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            
+            #second {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            #third {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+            }
+
+        }
+
+    }
+
+}
+
+/* mise en forme */
+
+div {
+    padding: 5px;
+    margin: 5px;
+
+    p {
+        text-align: justify
+    }
+
+}
+
+footer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    a{
+        color: yellow;
+    }
+
+}
